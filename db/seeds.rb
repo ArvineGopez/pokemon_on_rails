@@ -5,3 +5,31 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+require "csv"
+
+Pokemon.delete_all
+
+
+Pokemon.create(
+  name:     "Pokemon About",
+
+)
+
+Pokemon.create(
+  name:     "Information about Pokemons",
+
+)
+
+
+filename = Rails.root.join("db/Pokemon.csv")
+
+puts "Importing CSV data from: #{filename}"
+
+csv_data = File.read(filename)
+pokemons = CSV.parse(csv_data, headers: true, encoding: "utf-8")
+
+pokemons.each do |pokemon|
+  pokemon = Pokemon.find_or_create_by(name:pokemon["Name"])
+end

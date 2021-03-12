@@ -1,4 +1,11 @@
-Model
+Plan
+
+#So for this Project I want to use the Pokemon Dataset that I got from Kraggle~
+#This data set has the tables with a name of that pokemon , what kind of type the pokemon is, 2 types = type1, type2, 
+#The main Database includes with Generation and a boolean weather the pokemon is a legendary or not.
+#This dataset is a great use when it comes to teaching people more about pokemon and what kind they are, weather what type of the pokemon is, what generation the pokemon is
+#IF its legendary or not.
+
 
 Model: Pokemon
 -id : integer (auto incremeting PK)
