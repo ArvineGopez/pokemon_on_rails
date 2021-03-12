@@ -1,0 +1,16 @@
+Model
+
+Model: Pokemon
+-id : integer (auto incremeting PK)
+-name: string (varchar 255)
+-created_at: timestamp (auto generated)
+-updated_at: timestamp (auto generated)
+
+Model: Type
+-id: integer
+-name: string
+-price: decimal
+-description: text
+-
+-created_at: timestamp (auto generated)
+-updated_at: timestamp (auto generated)
