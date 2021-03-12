@@ -11,6 +11,7 @@ Model: Type
 -name: string
 -price: decimal
 -description: text
+-pokemon_id 
 -
 -created_at: timestamp (auto generated)
 -updated_at: timestamp (auto generated)
